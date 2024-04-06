@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2035,6 +2035,77 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446607487}
   m_CullTransparentMesh: 1
+--- !u!1 &1622157754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622157756}
+  - component: {fileID: 1622157755}
+  m_Layer: 0
+  m_Name: ButtonSoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1622157755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622157754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d95626d165cd94b84b4a430db54a8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSounds:
+  - {fileID: 8300000, guid: bbea2c4afc393e84f9beed93eaa0ef0b, type: 3}
+  - {fileID: 8300000, guid: 90d5c210e488e5a44807a409b077017e, type: 3}
+  - {fileID: 8300000, guid: 0c3a5b8f6c8314544a04bd9c365222aa, type: 3}
+  - {fileID: 8300000, guid: 811058b60d16cc945bba55bbbe44da5b, type: 3}
+  - {fileID: 8300000, guid: b691e27f38cecef41a76824307ca0652, type: 3}
+  - {fileID: 8300000, guid: 7f13a98e2df30764baa80a57349a2aaf, type: 3}
+  - {fileID: 8300000, guid: f6b950d8741bafd42807839672816239, type: 3}
+  - {fileID: 8300000, guid: fc14d3382da79bd4896e733d142c3a37, type: 3}
+  - {fileID: 8300000, guid: 9db3cb190ab9e094b9f00c2529cb065c, type: 3}
+  - {fileID: 8300000, guid: 829983a2b8e3b3b4fa22feeddc39cea9, type: 3}
+  - {fileID: 8300000, guid: 7caa7ab2bf3f54a46a1d63aff3af5d26, type: 3}
+  - {fileID: 8300000, guid: 14a8da4104529da409c5ddced1abe6e2, type: 3}
+  - {fileID: 8300000, guid: 0f00333479b4d114da9005110d6550a9, type: 3}
+  - {fileID: 8300000, guid: 0881e672110f8024686a559235826b78, type: 3}
+  - {fileID: 8300000, guid: b9bb366f5d976bb49b4103bf9b753faf, type: 3}
+  - {fileID: 8300000, guid: 9a12d8906b8c57a46babf4999ec17d15, type: 3}
+  - {fileID: 8300000, guid: 492da1e0e8f7d0f4f9bf2f674223fe0b, type: 3}
+  - {fileID: 8300000, guid: 085c905b44d6d1a4bb6eb32f2c2d6b7f, type: 3}
+  - {fileID: 8300000, guid: f7925b8c218c4594abfb67674bf85d2f, type: 3}
+  - {fileID: 8300000, guid: ece981282766d16479cda04443606f56, type: 3}
+  - {fileID: 8300000, guid: 9b26b1092b7056243ab37eeec04dac0a, type: 3}
+  - {fileID: 8300000, guid: 1a2ba091f0227e3408773e36e129d775, type: 3}
+  - {fileID: 8300000, guid: 32ec136f5af4b3842880fa37e114c849, type: 3}
+  - {fileID: 8300000, guid: 8b172ce85d266684a8a01d036b3866ce, type: 3}
+  - {fileID: 8300000, guid: e128f379c60806743b3404b908747542, type: 3}
+  - {fileID: 8300000, guid: 8e3d433c5997ec842b791dfd25dad3f9, type: 3}
+--- !u!4 &1622157756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622157754}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 645.8659, y: 453.57965, z: -790.7513}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1665273754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,6 +2409,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1622157755}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: PlayRandomButtonSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1690140657}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
         m_MethodName: OnPointerClick
@@ -2996,3 +3079,4 @@ SceneRoots:
   - {fileID: 1671528742}
   - {fileID: 2001867706}
   - {fileID: 1938040049}
+  - {fileID: 1622157756}
