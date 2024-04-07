@@ -24,10 +24,10 @@ public class EarthRandomizer : MonoBehaviour
         rotationStuff.Add(180);
         rotationStuff.Add(270);
         int random = Random.Range(0, 2);
-        Quaternion newRotation = Quaternion.Euler(gameObject.transform.rotation.eulerAngles.x, gameObject.transform.rotation.eulerAngles.y, rotationStuff[random]);
+        Quaternion newRotation = Quaternion.Euler(gameObject.transform.rotation.eulerAngles.x, rotationStuff[random], gameObject.transform.rotation.eulerAngles.z);
         gameObject.transform.rotation = newRotation;
         int random2 = Random.Range(0, 2);
-        Quaternion newRotation2 = Quaternion.Euler(grass.transform.rotation.eulerAngles.x, grass.transform.rotation.eulerAngles.y, rotationStuff[random]);
+        Quaternion newRotation2 = Quaternion.Euler(grass.transform.rotation.eulerAngles.x, rotationStuff[random], grass.transform.rotation.eulerAngles.z);
         grass.transform.rotation = newRotation2;
         for (int i = 0; i < clovers.Length; i++)
         {
