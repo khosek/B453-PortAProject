@@ -7,9 +7,12 @@ public class EarthRandomizer : MonoBehaviour
     [SerializeField] GameObject grass;
     [SerializeField] GameObject[] clovers;
     [SerializeField] GameObject[] flowers;
-    private bool bool1;
-    private bool bool2;
-    private bool bool3;
+    private bool bool1 = true;
+    private bool bool2 = true;
+    private bool bool3 = true;
+    private bool flowerbool1 = true;
+    private bool flowerbool2 = true;
+    private bool flowerbool3 = true;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +34,8 @@ public class EarthRandomizer : MonoBehaviour
         grass.transform.rotation = newRotation2;
         for (int i = 0; i < clovers.Length; i++)
         {
-            int randombool1 = Random.Range(0, 1);
-            int randombool2 = Random.Range(0, 1);
+            int randombool1 = Random.Range(0, 2);
+            int randombool2 = Random.Range(0, 2);
             if(randombool1 == 0)
             {
                 bool1 = false;
@@ -61,35 +64,39 @@ public class EarthRandomizer : MonoBehaviour
         }
         for (int i = 0; i < flowers.Length; i++)
         {
-            int randombool1 = Random.Range(0, 1);
-            int randombool2 = Random.Range(0, 1);
-            int randombool3 = Random.Range(0, 1);
+            int randombool1 = Random.Range(0, 2);
+            int randombool2 = Random.Range(0, 2);
+            int randombool3 = Random.Range(0, 2);
             if (randombool1 == 0)
             {
-                bool1 = false;
+               flowerbool1 = false;
             }
             if (randombool1 == 1)
             {
-                bool1 = true;
+                flowerbool1 = true;
             }
             if (randombool2 == 0)
             {
-                bool2 = false;
+               flowerbool2 = false;
             }
             if (randombool2 == 1)
             {
-                bool2 = true;
+                flowerbool2 = true;
             }
             if (randombool3 == 0)
             {
-                bool3 = false;
+                flowerbool3 = false;
             }
             if (randombool3 == 1)
             {
-                bool3 = true;
+                flowerbool3 = true;
             }
 
-            if (bool1 && bool2 && bool3)
+            Debug.Log("Flowerbool1: " + flowerbool1);
+            Debug.Log("Flowerbool2: " + flowerbool2);
+            Debug.Log("Flowerbool3: " + flowerbool3);
+
+            if (flowerbool1 && flowerbool2 && flowerbool3)
             {
                 flowers[i].SetActive(true);
             }
