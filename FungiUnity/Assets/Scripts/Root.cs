@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Root : MonoBehaviour
+public class Root: MonoBehaviour
 {
     public int seed;
     public int seed1;
@@ -111,6 +111,7 @@ public class Root : MonoBehaviour
         if (numPoints > 1)
         {
             rand = new System.Random(depth);
+            float randFloat = RandomFloatInRange(minSizeVariation, minSizeVariation);
             Vector3 randomVector = RandomVector(minRootDisplacement, maxRootDisplacement);
             float splineLength = GetSplineLength();
             int numSections = Mathf.CeilToInt(splineLength / sectionLength);
@@ -120,6 +121,8 @@ public class Root : MonoBehaviour
                 float sizeVariation = RandomRange(minSizeVariation, maxSizeVariation);
                 float start = i * sectionLength;
                 float end = (i + 1) * sectionLength;
+                Vector3 lastRandomVector = randomVector;
+                Vector3 randomVector2 = RandomVector(minRootDisplacement, maxRootDisplacement);
                 SetForwardAxis(Vector3.forward); 
                 Vector3 displacement = RandomVector(minRootDisplacement, maxRootDisplacement);
                 ApplyDisplacementAndSize(i, displacement, sizeVariation);

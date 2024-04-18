@@ -18,6 +18,7 @@ public class Base : MonoBehaviour
     public bool AllowsFunging { get; set; }
     public int GridX { get; set; }
     public int GridY { get; set; }
+
     public Root[] rootArray;
 
     // Start is called before the first frame update
