@@ -582,6 +582,105 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a12795588c26e449463bf771b3626e, type: 3}
+--- !u!1 &1822542178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1822542180}
+  - component: {fileID: 1822542179}
+  - component: {fileID: 1822542182}
+  - component: {fileID: 1822542181}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1822542179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822542178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a191880526a8347b01ba88cb15c284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grassPrefab: {fileID: 0}
+  rockPrefab: {fileID: 0}
+  treePrefab: {fileID: 0}
+  mushroomPrefab: {fileID: 0}
+  myceliumRootPrefab: {fileID: 0}
+  width: 10
+  height: 10
+  fungableCells: 0
+  fungedCells: 0
+  currentSteps: 1
+  currentRange: 1
+  rangeMustIncreaseBy: 0
+  mapString: 
+  splineHeight: 60
+--- !u!4 &1822542180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822542178}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.6690497, y: -350.6968, z: 1774.3344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1822542181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822542178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d6435db4c9b2945a19d51bea71f55f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: []
+--- !u!114 &1822542182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822542178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a191880526a8347b01ba88cb15c284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grassPrefab: {fileID: 0}
+  rockPrefab: {fileID: 0}
+  treePrefab: {fileID: 0}
+  mushroomPrefab: {fileID: 0}
+  myceliumRootPrefab: {fileID: 0}
+  width: 10
+  height: 10
+  fungableCells: 0
+  fungedCells: 0
+  currentSteps: 1
+  currentRange: 1
+  rangeMustIncreaseBy: 0
+  mapString: 
+  splineHeight: 60
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -591,3 +690,4 @@ SceneRoots:
   - {fileID: 379182531}
   - {fileID: 1269169382}
   - {fileID: 1468912730}
+  - {fileID: 1822542180}

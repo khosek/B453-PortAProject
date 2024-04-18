@@ -5,7 +5,7 @@ using UnityEngine;
 public class FungiCharacter : MonoBehaviour
 {
     // Assuming you have a CameraController script to handle camera dragging
-    [SerializeField] private CameraController cameraController;
+    //[SerializeField] private CameraController cameraController;
 
     private GameObject lastHover;
     private bool lastCorrect;
@@ -25,17 +25,12 @@ public class FungiCharacter : MonoBehaviour
         HandleInteraction();
     }
 
-    public void SetCameraDragging(bool dragging)
-    {
-        // Assuming cameraController exists and manages camera dragging
-        cameraController.IsDragging = dragging;
-    }
-
     private void HandleInteraction()
     {
         if (Input.GetButtonDown("Fire1")) // Assuming Fire1 is set up in Input Manager for interaction
         {
             RaycastHit hit;
+
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
             {
                 Base hitBaseBox = hit.collider.GetComponent<Base>();
@@ -45,13 +40,13 @@ public class FungiCharacter : MonoBehaviour
                     {
                         if (lastHover != null)
                         {
-                            levelManager.UpdateHighlights(lastHover, lastRange, false, lastCorrect);
+                            UpdateHighlights(lastHover, lastRange, false, lastCorrect);
                         }
 
                         lastCorrect = hitBaseBox.IsFunged && levelManager.WouldFungeAny(hitBaseBox.GridX, hitBaseBox.GridY);
                         lastHover = hitBaseBox.gameObject;
                         lastRange = levelManager.currentRange;
-                        levelManager.UpdateHighlights(hitBaseBox.gameObject, hitBaseBox.IsFunged ? levelManager.currentRange : 0, true, lastCorrect);
+                        UpdateHighlights(hitBaseBox.gameObject, hitBaseBox.IsFunged ? levelManager.currentRange : 0, true, lastCorrect);
                     }
                 }
                 else
@@ -73,11 +68,57 @@ public class FungiCharacter : MonoBehaviour
             {
                 if (levelManager.ExpandFunge(hitBaseBox.GridX, hitBaseBox.GridY))
                 {
-                    levelManager.UpdateHighlights(hitBaseBox.gameObject, levelManager.currentRange, true, false);
+                    UpdateHighlights(hitBaseBox.gameObject, levelManager.currentRange, true, false);
                 }
             }
         }
     }
 
-    // Additional methods like Pause and ContinueGame can be implemented as needed
+    public void UpdateHighlights(GameObject block, int range, bool Highlighted, bool Correct) 
+    {
+        if (block.GetComponent<Base>().AllowsFunging && block != null)
+        {
+            //block.DoHighlight(Highlighted, Correct)
+        }
+        bool[] stop = new bool[4];
+        for (int i = 1; i <= range; ++i)
+        {
+            block = levelManager.GetBlockAt(block.GetComponent<Base>().GridX, block.GetComponent<Base>().GridY - i);
+            if (!stop[0] && block.GetComponent<Base>().AllowsFunging)
+            {
+                //block.DoHighlight(Highlighted, Correct)
+            }
+            else
+            {
+                stop[0] = true;
+            }
+            block = levelManager.GetBlockAt(block.GetComponent<Base>().GridX + i, block.GetComponent<Base>().GridY);
+            if (!stop[1] && block.GetComponent<Base>().AllowsFunging)
+            {
+                //block.DoHighlight(Highlighted, Correct)
+            }
+            else
+            {
+                stop[1] = true;
+            }
+            block = levelManager.GetBlockAt(block.GetComponent<Base>().GridX, block.GetComponent<Base>().GridY + i);
+            if (!stop[2] && block.GetComponent<Base>().AllowsFunging)
+            {
+                //block.DoHighlight(Highlighted, Correct)
+            }
+            else
+            {
+                stop[2] = true;
+            }
+            block = levelManager.GetBlockAt(block.GetComponent<Base>().GridX - i, block.GetComponent<Base>().GridY);
+            if (!stop[3] && block.GetComponent<Base>().AllowsFunging)
+            {
+                //block.DoHighlight(Highlighted, Correct)
+            }
+            else
+            {
+                stop[3] = true;
+            }
+        }
+    }
 }
