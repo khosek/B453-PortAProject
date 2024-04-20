@@ -66,10 +66,59 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 83844813036b20a449e84d4b2ac2de58,
         type: 3}
       propertyPath: m_Name
-      value: terra
+      value: Earth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83844813036b20a449e84d4b2ac2de58,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5282546652123069501}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83844813036b20a449e84d4b2ac2de58,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7806851900021207599}
   m_SourcePrefab: {fileID: 100100000, guid: 83844813036b20a449e84d4b2ac2de58, type: 3}
+--- !u!1 &1124078286131582839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 83844813036b20a449e84d4b2ac2de58,
+    type: 3}
+  m_PrefabInstance: {fileID: 241205290405947942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-5282546652123069501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124078286131582839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aced03adb9ac084dbd32535ef7adc2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fungedColor: {r: 1, g: 0, b: 0, a: 1}
+  tintIntensity: 0.5
+--- !u!65 &7806851900021207599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124078286131582839}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25.67693, y: 26.53297, z: 25.412888}
+  m_Center: {x: 0.058149338, y: -13.361799, z: 0.568861}
