@@ -348,6 +348,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth3
       objectReference: {fileID: 0}
+    - target: {fileID: 7806851900021207599, guid: 1df0b66954a0a094eb690dac1a38f9fe,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 27.439827
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806851900021207599, guid: 1df0b66954a0a094eb690dac1a38f9fe,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.07094908
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -392,6 +402,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -7946446029343618029}
+    - targetCorrespondingSourceObject: {fileID: 1124078286131582839, guid: 1df0b66954a0a094eb690dac1a38f9fe,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6843524937817861398}
   m_SourcePrefab: {fileID: 100100000, guid: 1df0b66954a0a094eb690dac1a38f9fe, type: 3}
 --- !u!1 &6023298186789401924 stripped
 GameObject:
@@ -455,6 +469,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &-6843524937817861398
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6023298186789401924}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!4 &6403236196702908414 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 347436407887367629, guid: 1df0b66954a0a094eb690dac1a38f9fe,

@@ -131,11 +131,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5151604552139344094, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_Name
       value: Earth2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 417818939}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1346153945}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -191,6 +211,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &243430837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 243430836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &417818938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,11 +225,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5151604552139344094, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_Name
       value: Earth2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1938967310}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 243430837}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -259,6 +305,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &417818939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 417818938}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &460163723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -349,11 +401,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5151604552139344094, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_Name
       value: Earth2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 835508981}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1104188670}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -409,6 +481,56 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &610153714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 610153713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &688804015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 688804017}
+  - component: {fileID: 688804016}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &688804016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688804015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5602a13c933adad4a9bfe190118a6ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &688804017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688804015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.966, y: 46.818512, z: 20.663177}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &835508980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -417,11 +539,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5151604552139344094, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_Name
       value: Earth2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1938967310}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 610153714}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -477,6 +619,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &835508981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 835508980}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &895564956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -485,11 +633,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5151604552139344094, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_Name
       value: Earth2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 243430837}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1538138410}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -545,6 +713,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &1104188670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1864991103}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1346153945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 895564956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1538138409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -553,11 +733,56 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3483825165170937884, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 27.579906
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483825165170937884, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 26.905785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483825165170937884, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.39176893
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483825165170937884, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.17758751
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483825165170937884, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151604552139344094, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_Name
       value: Earth2
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1104188670}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1346153945}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -608,11 +833,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5151604552139344094, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &1538138410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1538138409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1601743909
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,7 +1021,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 25.67693, y: 26.53297, z: 25.412888}
   m_Center: {x: 0.058149338, y: -13.361799, z: 0.568861}
@@ -933,11 +1165,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5151604552139344094, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_Name
       value: Earth2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 610153714}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1538138410}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1001,11 +1253,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5151604552139344094, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_Name
       value: Earth2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 417818939}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 835508981}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1061,6 +1333,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &1938967310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1938967309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1076,3 +1354,4 @@ SceneRoots:
   - {fileID: 460163723}
   - {fileID: 895564956}
   - {fileID: 835508980}
+  - {fileID: 688804017}

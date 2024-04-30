@@ -204,6 +204,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1778756825}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -259,6 +269,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &92259504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 92259503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &340985908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -272,6 +288,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1627580419}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -327,6 +353,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &340985909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 340985908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &496019496
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +525,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 809302703}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 2073055514}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -548,6 +595,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &613827417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 613827416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &640086898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -561,6 +614,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1230860806}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 340985909}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -622,6 +690,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 640086898}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &640086900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 640086898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &740999289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -635,6 +709,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1468742812}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -703,6 +787,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1131242366}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 613827417}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1230860806}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -758,6 +862,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &809302703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 809302702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1131242365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -771,6 +881,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 809302703}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1627580419}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -826,6 +951,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &1131242366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1131242365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1230860805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -839,6 +970,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1627580419}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 809302703}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[2]
+      value: 
+      objectReference: {fileID: 2073055514}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -894,6 +1045,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &1230860806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1230860805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1260495289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,6 +1182,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 92259504}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1080,6 +1247,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &1468742812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1468742811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1536531829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1161,6 +1334,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1131242366}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 340985909}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1230860806}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1216,6 +1409,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &1627580419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1627580418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1778756824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1229,6 +1428,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 640086900}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 2073055514}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1284,6 +1498,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &1778756825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1778756824}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1942716154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1352,6 +1572,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 309967edc83ac644bbc8c7aeac564174, type: 3}
+--- !u!1 &1956846794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1956846795}
+  - component: {fileID: 1956846796}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1956846795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956846794}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50.946777, y: 50.730713, z: -48.340992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1956846796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956846794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5602a13c933adad4a9bfe190118a6ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2073055513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1365,6 +1629,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1230860806}
+    - target: {fileID: 6269386886638983996, guid: 565ad43ef43524e42b0d44fe2567999e,
+        type: 3}
+      propertyPath: blockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 613827417}
     - target: {fileID: 6403236196702908414, guid: 565ad43ef43524e42b0d44fe2567999e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1420,6 +1699,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ad43ef43524e42b0d44fe2567999e, type: 3}
+--- !u!1 &2073055514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6023298186789401924, guid: 565ad43ef43524e42b0d44fe2567999e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2073055513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1441,3 +1726,4 @@ SceneRoots:
   - {fileID: 1778756824}
   - {fileID: 613827416}
   - {fileID: 2073055513}
+  - {fileID: 1956846795}

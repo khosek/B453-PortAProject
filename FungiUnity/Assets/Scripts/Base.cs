@@ -21,6 +21,8 @@ public class Base : MonoBehaviour
 
     public Root[] rootArray;
 
+    [SerializeField] private List<GameObject> blockList = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -99,9 +101,9 @@ public class Base : MonoBehaviour
                 flowerbool3 = true;
             }
 
-            Debug.Log("Flowerbool1: " + flowerbool1);
-            Debug.Log("Flowerbool2: " + flowerbool2);
-            Debug.Log("Flowerbool3: " + flowerbool3);
+      //      Debug.Log("Flowerbool1: " + flowerbool1);
+       //     Debug.Log("Flowerbool2: " + flowerbool2);
+       //     Debug.Log("Flowerbool3: " + flowerbool3);
 
             if (flowerbool1 && flowerbool2 && flowerbool3)
             {
@@ -127,4 +129,15 @@ public class Base : MonoBehaviour
     {
         return AllowsFunging && !IsMycelled;
     }
+
+    void OnCollisionEnter(Collision other)
+    {
+        Debug.Log("Collision from " + other.gameObject.name);
+    }   
+
+    /* void OnCollisionStay(Collision other)
+    {
+        Debug.Log("Collision from " + other.gameObject.name);
+    } */
+    
 }

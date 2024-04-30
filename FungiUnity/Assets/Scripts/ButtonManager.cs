@@ -27,6 +27,6 @@ public class ButtonManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
      {
         ButtonBackground.color = clickColor;
         // Load your specific scene here
-        SceneManager.LoadScene("YourSceneName");
+        SceneManager.LoadScene("Level1");
      }
 }
