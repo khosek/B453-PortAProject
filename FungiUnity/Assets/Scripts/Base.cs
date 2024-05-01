@@ -19,13 +19,18 @@ public class Base : MonoBehaviour
     public int GridX { get; set; }
     public int GridY { get; set; }
 
+    public int depth;
+    public int height;
+    public GameObject parent;
     public Root[] rootArray;
+    public GameObject[] childArray;
 
     [SerializeField] private List<GameObject> blockList = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
+        childArray = new GameObject[4];
         Randomizer();
     }
 

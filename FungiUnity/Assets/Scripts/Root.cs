@@ -26,18 +26,12 @@ public class Root: MonoBehaviour
     public float minRootDisplacement, maxRootDisplacement;
     public float sectionLength;
     private System.Random rand;
-    public Vector3 Direction;
+    public CardinalDirections Direction;
 
     // Start is called before the first frame update
     void Start()
     {
         rand = new System.Random();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
     }
 
     public void CreateDecorations()
@@ -174,19 +168,16 @@ public class Root: MonoBehaviour
         gameObject.transform.LookAt(forward);
     }
 
-    // Method to reset the random stream to its initial state
     public void Reset(int seed)
     {
         rand = new System.Random(seed);
     }
 
-    // Method to set a new seed for the random stream
     public void SetSeed(int newSeed)
     {
         rand = new System.Random(newSeed);
     }
 
-    // Method to get a random float in a specified range
     public float RandomFloatInRange(float min, float max)
     {
         return (float)(rand.NextDouble() * (max - min) + min);

@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance; 
 
     public GameObject grassPrefab, rockPrefab, treePrefab, mushroomPrefab, myceliumRootPrefab;
-    public int width = 10, height = 10;
+    public int width = 2, height = 2;
     public GameObject[,] blocks;
     public int fungableCells = 0;
     public int fungedCells = 0;
@@ -17,6 +18,8 @@ public class LevelManager : MonoBehaviour
     public string mapString; // Assuming a simple string for map layout, replace '\n' with actual new lines
     public float splineHeight = 60.0f;
     private GameObject prefab;
+    public int TileSize = 100;
+    public GameObject spline;
 
     private void Awake()
     {
@@ -31,41 +34,38 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        blocks = new GameObject[width, height];
-        GenerateMapFromMapString();
-    }
+ 
 
     void GenerateMapFromMapString()
     {
         string processedMapString = mapString.Replace("\n", "").Replace("\r", "");
+        Debug.Log(processedMapString);
         int index = 0;
 
         for (int y = 0; y < height; y++)
         {
             for (int x = 0; x < width; x++)
             {
-                char cell = processedMapString[index];
-                Vector3 position = new Vector3(x * 100.0f, y * 100.0f, 0);
-                prefab = null;
-
+                char cell = processedMapString[Pos(x,y)];
+                Vector3 position = new Vector3(x * 27, y * 27, 0);
+                prefab = grassPrefab;
+                Debug.Log(cell);
                 switch (cell)
                 {
-                    case 'g': // grass
+                    case 'G': // grass
                         prefab = grassPrefab;
                         break;
-                    case 'r': // rock
+                    case 'R': // rock
                         prefab = rockPrefab;
                         break;
-                    case 't': // tree
+                    case 'T': // tree
                         prefab = treePrefab;
                         break;
-                    case 'm': // mushroom
+                    case 'M': // mushroom
                         prefab = mushroomPrefab;
                         break;
                 }
-
+                Debug.Log("Prefab value: " + prefab);
                 if (prefab != null)
                 {
                     GameObject blockObj = Instantiate(prefab, position, Quaternion.identity);
@@ -102,7 +102,6 @@ public class LevelManager : MonoBehaviour
         return false;
     }
 
-    // Expands funging from a specific block, if possible
     public bool ExpandFunge(int X, int Y)
     {
         bool anyFunged = false;
@@ -110,19 +109,16 @@ public class LevelManager : MonoBehaviour
 
         if (block != null && block.GetComponent<Base>().IsFunged)
         {
-            // Attempt to fung adjacent blocks in all directions
-            anyFunged |= TryFungeExpansion(block, X, Y - 1, Vector3.up, Vector3.down, currentRange);
-            anyFunged |= TryFungeExpansion(block, X + 1, Y, Vector3.right, Vector3.left, currentRange);
-            anyFunged |= TryFungeExpansion(block, X, Y + 1, Vector3.down, Vector3.up, currentRange);
-            anyFunged |= TryFungeExpansion(block, X - 1, Y, Vector3.left, Vector3.right, currentRange);
+            anyFunged |= TryFungeExpansion(block, X, Y - 1, CardinalDirections.up, CardinalDirections.right, currentRange);
+            anyFunged |= TryFungeExpansion(block, X + 1, Y, CardinalDirections.right, CardinalDirections.left, currentRange);
+            anyFunged |= TryFungeExpansion(block, X, Y + 1, CardinalDirections.down, CardinalDirections.up, currentRange);
+            anyFunged |= TryFungeExpansion(block, X - 1, Y, CardinalDirections.left, CardinalDirections.right, currentRange);
 
             // Placeholder for MyceliumExpand functionality
             //MyceliumExpand(block);
 
             if (anyFunged)
             {
-                // Placeholder for StepDone functionality
-                // StepDone();
                 currentSteps++;
             }
         }
@@ -144,22 +140,69 @@ public class LevelManager : MonoBehaviour
     }
 
     // Attempts to protect and fung adjacent blocks
-    bool TryFungeExpansion(GameObject blockFrom, int X, int Y, Vector3 outDir, Vector3 inDir, int rangeLeft)
+    bool TryFungeExpansion(GameObject blockFrom, int X, int Y, CardinalDirections outDir, CardinalDirections inDir, int rangeLeft)
     {
         if (!ValidPos(X, Y)) return false;
 
         GameObject blockTo = GetBlockAt(X, Y);
         if (blockTo != null && blockTo.GetComponent<Base>().IsFungable())
         {
-            // Assuming Funge is a method that marks the block as funged
-            Funge(blockFrom, blockTo, outDir, inDir);
+            int outDirInt = 0;
+            int inDirInt = 0;
+
+            if(outDir == CardinalDirections.up)
+            {
+                outDirInt = 0;
+            }
+            if (outDir == CardinalDirections.right)
+            {
+                outDirInt = 1;
+            }
+            if (outDir == CardinalDirections.down)
+            {
+                outDirInt = 2;
+            }
+            if (outDir == CardinalDirections.left)
+            {
+                outDirInt = 3;
+            }
+            if (inDir == CardinalDirections.up)
+            {
+                inDirInt = 0;
+            }
+            if (inDir == CardinalDirections.right)
+            {
+                inDirInt = 1;
+            }
+            if (inDir == CardinalDirections.down)
+            {
+                inDirInt = 2;
+            }
+            if (inDir == CardinalDirections.left)
+            {
+                inDirInt = 3;
+            }
+
+            Funge(blockFrom, blockTo, outDirInt, inDirInt);
 
             if (rangeLeft > 1)
             {
-                // Recursive expansion based on the remaining range
-                // Direction handling omitted for brevity
+                switch(outDir)
+                {
+                    case CardinalDirections.up:
+                        TryFungeExpansion(blockTo, X, Y - 1, outDir, inDir, rangeLeft - 1); 
+                        break;
+                    case CardinalDirections.right:
+                        TryFungeExpansion(blockTo, X + 1, Y, outDir, inDir, rangeLeft - 1);
+                        break;
+                    case CardinalDirections.down:
+                        TryFungeExpansion(blockTo, X, Y + 1, outDir, inDir, rangeLeft - 1);
+                        break;
+                    case CardinalDirections.left:
+                        TryFungeExpansion(blockTo, X - 1, Y, outDir, inDir, rangeLeft - 1);
+                        break;
+                }
             }
-
             return true;
         }
 
@@ -167,15 +210,23 @@ public class LevelManager : MonoBehaviour
     }
 
     // Connects two blocks as part of the funging process
-    void Funge(GameObject blockFrom, GameObject blockTo, Vector3 outDir, Vector3 inDir)
+    void Funge(GameObject blockFrom, GameObject blockTo, int outDir, int inDir)
     {
-        // Assuming IsFunged is a property that marks the block as having fungus
+        //blockTo.Funge()
         blockTo.GetComponent<Base>().IsFunged = true;
 
-        // Here you would handle setting up child/parent relationships and potentially modifying other properties
-        // Depending on your game's logic, you might adjust the block's state, trigger animations, etc.
+        blockFrom.GetComponent<Base>().childArray[outDir] = blockTo;
+        blockTo.GetComponent<Base>().childArray[inDir] = blockFrom;
 
-        // Placeholder for any further actions needed after a successful funging
+        blockTo.GetComponent<Base>().depth = blockFrom.GetComponent<Base>().depth + 1;
+        blockTo.GetComponent<Base>().height = 0;
+        blockTo.GetComponent<Base>().parent = blockFrom;
+
+        fungedCells++;
+        if(fungedCells >= fungableCells)
+        {
+            //you win
+        }
     }
 
     // Checks if the provided position is within the bounds of the game map
@@ -186,22 +237,66 @@ public class LevelManager : MonoBehaviour
 
     public void MyceliumInit(GameObject BlockThing)
     {
-        Vector3 location = new Vector3(BlockThing.GetComponent<Base>().GridX * 100.0f, BlockThing.GetComponent<Base>().GridY * 100.0f, splineHeight);
+        Vector3 location = new Vector3(BlockThing.GetComponent<Base>().GridX * TileSize, BlockThing.GetComponent<Base>().GridY * TileSize, splineHeight);
         BlockThing.GetComponent<Base>().IsMycelled = true;
-
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 4; i++)
         {
-            GameObject rootObj = Instantiate(myceliumRootPrefab, location, Quaternion.identity);
-            Root root = rootObj.GetComponent<Root>(); // Assuming Root is a component/script attached to the myceliumRootPrefab
+            GameObject rootObj = Instantiate(spline, location, Quaternion.identity);
+            Root root = rootObj.GetComponent<Root>(); 
             if (root != null)
             {
                 root.depth = 0;
                 root.isLeaf = true;
-                //root.Direction = (Direction)i; // Assuming Direction is an enum you've defined
+                root.Direction = (CardinalDirections)i;
                 BlockThing.GetComponent<Base>().rootArray[i] = root;
-
-                // Set the root object as a child of the block in the scene hierarchy
                 rootObj.transform.SetParent(BlockThing.transform, worldPositionStays: false);
+            }
+        }
+    }
+
+    public int Pos(int X, int Y)
+    {
+        return X + Y;
+    }
+
+    public void MyceliumExpand(GameObject block)
+    {
+        int possible = 0;
+        int maxLength = 0;
+        Root lastPossibleRoot = null;
+        Root longestRoot = null;
+        foreach(Root root in block.GetComponent<Base>().rootArray) 
+        {
+            if (root)
+            {
+                int index = 0;
+                if(root.Direction == CardinalDirections.up)
+                {
+                    index = 0;
+                }
+                if (root.Direction == CardinalDirections.right)
+                {
+                    index = 1;
+                }
+                if (root.Direction == CardinalDirections.down)
+                {
+                    index = 2;
+                }
+                if (root.Direction == CardinalDirections.left)
+                {
+                    index = 3;
+                }
+                GameObject current = block.GetComponent<Base>().childArray[index];
+                if(current != null && current.GetComponent<Base>().IsMycelable())
+                {
+                    possible++;
+                    lastPossibleRoot = root;
+                }
+                if(root.spline.positionCount >= maxLength)
+                {
+                    maxLength = root.spline.positionCount;
+                    longestRoot = root;
+                }
             }
         }
     }

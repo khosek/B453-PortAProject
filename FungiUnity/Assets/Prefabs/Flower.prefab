@@ -66,7 +66,12 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 353f1de428fe2cc4da3bbec80f4cb61a,
         type: 3}
       propertyPath: m_Name
-      value: floreta
+      value: Flower
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 353f1de428fe2cc4da3bbec80f4cb61a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

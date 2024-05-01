@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class FungiCharacter : MonoBehaviour
 {
-    // Assuming you have a CameraController script to handle camera dragging
-    //[SerializeField] private CameraController cameraController;
-
     private GameObject lastHover;
     private bool lastCorrect;
     private int lastRange;
-
-    // Assuming LevelManager is a singleton for ease of access
     private LevelManager levelManager;
 
     private void Start()
     {
-        // Unity uses Start for initialization
-        Time.timeScale = 1; // Unpausing game if paused
+        Time.timeScale = 1; 
     }
 
     private void Update()
@@ -27,7 +21,7 @@ public class FungiCharacter : MonoBehaviour
 
     private void HandleInteraction()
     {
-        if (Input.GetButtonDown("Fire1")) // Assuming Fire1 is set up in Input Manager for interaction
+        if (Input.GetButtonDown("Fire1")) 
         {
             RaycastHit hit;
 
@@ -59,7 +53,6 @@ public class FungiCharacter : MonoBehaviour
 
     public void Interact()
     {
-        // Simplified interaction logic based on Unreal's Interact method
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
         {
@@ -86,7 +79,7 @@ public class FungiCharacter : MonoBehaviour
             block = levelManager.GetBlockAt(block.GetComponent<Base>().GridX, block.GetComponent<Base>().GridY - i);
             if (!stop[0] && block.GetComponent<Base>().AllowsFunging)
             {
-                //block.DoHighlight(Highlighted, Correct)
+                //block.DoHighlight(Highlighted, Correct);
             }
             else
             {
@@ -95,7 +88,7 @@ public class FungiCharacter : MonoBehaviour
             block = levelManager.GetBlockAt(block.GetComponent<Base>().GridX + i, block.GetComponent<Base>().GridY);
             if (!stop[1] && block.GetComponent<Base>().AllowsFunging)
             {
-                //block.DoHighlight(Highlighted, Correct)
+                //block.DoHighlight(Highlighted, Correct);
             }
             else
             {
